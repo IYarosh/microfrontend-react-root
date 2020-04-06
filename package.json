@@ -4,7 +4,8 @@
   "description": "Package for project, which will be include 2 projects on React with microfrontend architecture. Based on single-spa framework",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && webpack-dev-server"
+    "start": "webpack && webpack-dev-server",
+    "reinstall-modules": "rmdir /S /Q node_modules && npm i"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/IYarosh/microfrontend-react-root#readme",
   "dependencies": {
+    "microfrontend-react-app1": "github:IYarosh/microfrontend-react-app1",
+    "microfrontend-react-app2": "github:IYarosh/microfrontend-react-app2",
     "single-spa": "^5.3.1"
   },
   "devDependencies": {
